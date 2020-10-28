@@ -150,4 +150,4 @@ impl X {
 
 После небольшого введения в синтаксис Rust, мы готовы двигаться дальше. Увидимся в следующей главе!
 
-> ***КОД:*** Увидеть весь код из данной главы можно [здесь](https://github.com/iolivia/rust-sokoban/tree/master/code/rust-sokoban-c01-01).
+> ***КОД:*** увидеть весь код из данной главы можно [здесь](https://github.com/iolivia/rust-sokoban/tree/master/code/rust-sokoban-c01-01).
