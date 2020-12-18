@@ -1,0 +1,15 @@
+name: Syms-counter
+on:
+  pull_request:
+    types: [closed]
+  
+jobs:
+  syms-count:
+    name: Symbols counting
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.2.0
+      with:
+        submodules: recursive
+        fetch-depth: 200
+    - uses: rust-lang-ru/simpleinfra/syms-counter@master
