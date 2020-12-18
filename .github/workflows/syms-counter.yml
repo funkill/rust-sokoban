@@ -13,3 +13,6 @@ jobs:
         submodules: recursive
         fetch-depth: 200
     - uses: rust-lang-ru/simpleinfra/syms-counter@master
+      env:
+        RUST_BACKTRACE: full
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
