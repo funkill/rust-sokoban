@@ -20,7 +20,11 @@ jobs:
     name: Gitlocalize bugs checking
     runs-on: ubuntu-latest
     steps:
-      - uses: rust-lang-ru/simpleinfra/gl-bugs-checker@master
-        with:
-          translation_dir: "books/ru/src"
-          original_dir: "books/en_US/src" 
+    - uses: actions/checkout@v2.2.0
+      with:
+        submodules: recursive
+        fetch-depth: 200
+    - uses: rust-lang-ru/simpleinfra/gl-bugs-checker@master
+      with:
+        translation_dir: "books/ru/src"
+        original_dir: "books/en_US/src" 
