@@ -16,3 +16,11 @@ jobs:
         fetch-depth: 200
     - run: npm install yaspeller
     - run: git show -m --name-only -1 --format="format:" | grep --color=never -i '.md' | xargs node_modules/.bin/yaspeller -c .yaspellerrc
+  gl-bugs-checking:
+    name: Gitlocalize bugs checking
+    runs-on: ubuntu-latest
+    steps:
+      - uses: rust-lang-ru/simpleinfra/gl-bugs-checker@master
+        with:
+          translation_dir: "books/ru/src"
+          original_dir: "books/en_US/src" 
