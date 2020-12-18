@@ -1,7 +1,6 @@
 name: Syms-counter
 on:
   pull_request:
-    types: [closed]
   
 jobs:
   syms-count:
