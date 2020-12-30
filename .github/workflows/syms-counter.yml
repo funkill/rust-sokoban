@@ -16,3 +16,5 @@ jobs:
       env:
         RUST_BACKTRACE: full
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tagged_users: "@funkill @ava57r @TelegaOvoshey"
