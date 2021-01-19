@@ -12,6 +12,7 @@ jobs:
       with:
         submodules: recursive
         fetch-depth: 200
+    - run: cat $GITHUB_EVENT_PATH
     - uses: rust-lang-ru/simpleinfra/syms-counter@master
       env:
         RUST_BACKTRACE: full
